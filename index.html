@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hausala Rasaili | CSIT Student Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e293b',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white tracking-tighter">
+                        HR<span class="text-primary">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#skills" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                        <a href="#experience" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#projects" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">Contact Me</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-slate-900" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-slate-800">
+                <a href="#home" onclick="toggleMenu()" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" onclick="toggleMenu()" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#skills" onclick="toggleMenu()" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#experience" onclick="toggleMenu()" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#projects" onclick="toggleMenu()" class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" onclick="toggleMenu()" class="text-primary font-bold block px-3 py-2 rounded-md text-base">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-dark">
+        <div class="absolute inset-0 z-0">
+            <img src="https://image.qwenlm.ai/public_source/664b74b4-c56b-47d6-9e07-36077c7cfb96/16e521f81-e601-421d-a04a-1cb460571d7f.png" alt="Background" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-6 inline-block">
+                <span class="px-4 py-2 rounded-full bg-blue-900/50 border border-blue-500/30 text-blue-300 text-sm font-medium backdrop-blur-sm">
+                    Available for Internships
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Hausala Rasaili</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto font-light">
+                CSIT Student & Aspiring Technologist based in Kathmandu, Nepal.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3.5 rounded-full bg-primary hover:bg-blue-600 text-white font-semibold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold transition-all transform hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
+            <div class="mt-16 flex justify-center space-x-8 text-slate-400">
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-github text-2xl"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="mailto:hausalarasaili@gmail.com" class="hover:text-white transition-colors"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center fade-in-section">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <img src="MRPL0617.jpg" alt="Hausala Rasaili" class="relative rounded-2xl shadow-xl w-full object-cover aspect-[4/5] md:aspect-square">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        I am a motivated <span class="text-primary font-semibold">CSIT (Computer Science and Information Technology)</span> student at Far Western University with a strong interest in technology, problem-solving, and continuous learning. 
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        My background in teaching has helped me develop strong communication and leadership skills, which I believe are crucial in the tech industry. I aim to build a career in the IT field by combining technical knowledge with creativity and real-world problem solving.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-slate-900">Location</h4>
+                            <p class="text-slate-600">Kathmandu, Nepal</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-slate-900">Education</h4>
+                            <p class="text-slate-600">CSIT, Far Western University</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-slate-900">Email</h4>
+                            <p class="text-slate-600">hausalarasaili@gmail.com</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-slate-900">Phone</h4>
+                            <p class="text-slate-600">+977 9762860705</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl font-bold text-slate-900">Technical Skills</h2>
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">My toolkit for building software and solving problems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in-section">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-code text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Programming</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-slate-700">C Programming</span>
+                                <span class="text-sm font-medium text-slate-500">75%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-primary h-2.5 rounded-full skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-slate-700">HTML/CSS</span>
+                                <span class="text-sm font-medium text-slate-500">80%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-primary h-2.5 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mr-4">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Soft Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Communication</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Public Speaking</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Problem Solving</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Teamwork</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 border-t border-slate-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold text-white tracking-tighter">HR<span class="text-primary">.</span></span>
+                <p class="text-slate-500 text-sm mt-1">© 2025 Hausala Rasaili. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
